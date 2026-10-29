@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+  <title id="title">样本图表</title><desc id="desc">甲组为四十，乙组为六十。</desc>
+  <rect width="640" height="300" fill="#fff"/>
+  <text x="30" y="38" fill="#111" font-size="22" font-family="Microsoft YaHei,sans-serif">两组结果</text>
+  <line x1="120" x2="580" y1="245" y2="245" stroke="#777"/>
+  <text x="38" y="130" fill="#333" font-size="18" font-family="Microsoft YaHei,sans-serif">甲组</text>
+  <rect x="120" y="106" width="248" height="32" fill="#355d85"/><text x="380" y="130" fill="#111" font-size="18">40</text>
+  <text x="38" y="205" fill="#333" font-size="18" font-family="Microsoft YaHei,sans-serif">乙组</text>
+  <rect x="120" y="181" width="372" height="32" fill="#638b9f"/><text x="504" y="205" fill="#111" font-size="18">60</text>
+  <text x="120" y="278" fill="#777" font-size="15" font-family="Microsoft YaHei,sans-serif">数值（单位：分）</text>
+</svg>

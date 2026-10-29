@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "title": "手机阅读版排版测试",
+  "title_source_refs": ["title"],
+  "source_items": [
+    {"id":"title","kind":"title","locator":"fixture/title"},
+    {"id":"heading-1","kind":"heading","locator":"fixture/h1"},
+    {"id":"paragraph-1","kind":"paragraph","locator":"fixture/p1"},
+    {"id":"paragraph-2","kind":"paragraph","locator":"fixture/p2"},
+    {"id":"figure-1","kind":"figure","locator":"fixture/figure1"},
+    {"id":"heading-2","kind":"heading","locator":"fixture/h2"},
+    {"id":"heading-2a","kind":"heading","locator":"fixture/h2a"},
+    {"id":"table-1","kind":"table","locator":"fixture/table1"},
+    {"id":"paragraph-3","kind":"paragraph","locator":"fixture/p3"}
+  ],
+  "omissions": [],
+  "sections": [
+    {"id":"overview","title":"概览","source_refs":["heading-1"],"blocks":[
+      {"kind":"paragraph","source_refs":["paragraph-1"],"text":"这是用于检查字号、行距和中文字形的样本文字。它只测试排版与来源映射，不代表任何实际研究结论。"},
+      {"kind":"paragraph","source_refs":["paragraph-2"],"runs":[{"text":"这一段含有"},{"text":"加粗内容","mark":"strong"},{"text":"和一个"},{"text":"来源链接","href":"https://example.org"},{"text":"。"}]},
+      {"kind":"figure","source_refs":["figure-1"],"src":"chart-zh.svg","alt":"两组结果：甲组四十分，乙组六十分。横轴单位为分。","caption":"图 1｜两组结果（排版测试）。"}
+    ]},
+    {"id":"results","title":"结果","source_refs":["heading-2"],"blocks":[
+      {"kind":"subheading","source_refs":["heading-2a"],"text":"数据表"},
+      {"kind":"table","source_refs":["table-1"],"headers":["组别","数值","备注"],"rows":[["甲组","40","测试数据"],["乙组","60","测试数据"]],"caption":"表 1｜测试用数据。"},
+      {"kind":"paragraph","source_refs":["paragraph-3"],"text":"阅读到这里时，左侧导航应指向“结果”一节；在手机上，目录按钮应能展开并跳转。"}
+    ]}
+  ]
+}

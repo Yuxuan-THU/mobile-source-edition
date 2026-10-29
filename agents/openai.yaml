@@ -1,0 +1,4 @@
+interface:
+  display_name: "手机忠实阅读版"
+  short_description: "把 PDF、网页和多模态材料制成忠实中文手机阅读版"
+  default_prompt: "Use $mobile-source-edition to turn this source into a faithful Chinese mobile reading HTML, including translated figures and a source coverage audit."
